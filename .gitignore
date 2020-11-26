@@ -5,3 +5,6 @@
 .Rproj.user
 *.swp
 .Rhistory
+.idea
+py/__pycache__
+
