@@ -7,4 +7,5 @@
 .Rhistory
 .idea
 py/__pycache__
+*.csv
 
