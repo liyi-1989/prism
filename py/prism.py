@@ -99,6 +99,8 @@ def prism(data, data_early, GTdata, decomp="classic", n_history = 700, n_trainin
                     # cp ~/Download/GLMnet.so /Users/mm28542/.virtualenvs/prism/lib/python3.8/site-packages/glmnet_python/
                     # sudo cp /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libgfortran.3.dylib /usr/local/gfortran/lib/
 
+                    # glmnet_python does not support random_state argument, so for random cv, we need to
+                    # manually shuffle rows.
                     np.random.seed(seed)
                     idx = np.random.permutation(design_matrix.shape[0])
 
